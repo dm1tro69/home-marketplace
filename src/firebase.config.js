@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from 'firebase/firestore'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAJtkdBbreygMGWAX1nkb0SMngS07swxpk",
-    authDomain: "house-marketplace-app-58cb3.firebaseapp.com",
-    projectId: "house-marketplace-app-58cb3",
-    storageBucket: "house-marketplace-app-58cb3.appspot.com",
-    messagingSenderId: "402496754210",
-    appId: "1:402496754210:web:5665c989fbf9edab70707b"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_APP_ID
 };
 
 // Initialize Firebase
