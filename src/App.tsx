@@ -1,5 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+// import {ToastContainer} from "react-toastify";
+// import 'react-toastify/dist/ReactToastify.css';
 import Explore from "./pages/Explore";
 import Offers from "./pages/Offers";
 import Profile from "./pages/Profile";
@@ -11,9 +13,11 @@ import Navbar from "./components/Navbar";
 
 const App = () => {
 
+
   return (
 
       <>
+          {/*<ToastContainer>*/}
           <BrowserRouter>
               <Routes>
                   <Route path={'/'} element={<Explore/>}/>
@@ -25,6 +29,7 @@ const App = () => {
               </Routes>
               <Navbar/>
           </BrowserRouter>
+          {/*</ToastContainer>*/}
       </>
 
 
